@@ -14,3 +14,7 @@ Quick script I wrote to convert Keep notes (exported from Takeout) into PDFs.
 4. Resulting PDFs will be placed into `generated/`
 
 It will keep track of notes already processed in `processed.txt`, so if you re-ran the script, it would skip those files.
+
+## Example
+
+See [example.pdf](generated/example.pdf) which was generated from [example.json](keep/example.json).
