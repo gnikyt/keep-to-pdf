@@ -1,0 +1,8 @@
+keep/*
+!keep/.gitkeep
+!keep/example.json
+generated/*
+!generated/.gitkeep
+!generated/example.pdf
+processed.txt
+node_modules/

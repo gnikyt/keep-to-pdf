@@ -1,0 +1,18 @@
+{
+  "name": "keep-to-pdf",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Tyler King <tyler.n.king@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:osiset/keep-to-pdf.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "process": "node index.js"
+  },
+  "dependencies": {
+    "glob": "^8.0.3",
+    "md-to-pdf": "^5.1.0"
+  }
+}
