@@ -97,6 +97,15 @@ const noteToPdf = async (filename, content) =>
     );
 
 /**
+ * Save content of note to Markdown (does not convert, assumes Markdown already).
+ * @param {string} filename The filename for the Markdown file. 
+ * @param {string} content The content of the note. 
+ * @returns {Promise<void>}
+ */
+const noteSaveToMd = async (filename, content) =>
+    fs.writeFile(`./generated/${filename}.md`, content);
+
+/**
  * Reformats the note.
  * @param {Object} note The parsed note.
  * @returns {string}
@@ -154,6 +163,7 @@ const main = async () => {
                 const pnote = parseNote(npath, note);
                 const tpl = notePdfTpl(pnote);
                 await noteToPdf(pnote.filename, tpl);
+                await noteSaveToMd(pnote.filename, pnote.content);
 
                 processed.push(npath);
                 count += 1;

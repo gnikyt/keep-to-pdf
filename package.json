@@ -5,7 +5,7 @@
   "author": "Tyler King <tyler.n.king@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:osiset/keep-to-pdf.git"
+    "url": "git@github.com:gnikyt/keep-to-pdf.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
